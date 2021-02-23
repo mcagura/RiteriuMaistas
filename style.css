@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400,600&display=swap');
+
+/* Headeris ir viskas iki korteliu) */
+*{
+    box-sizing: border-box;
+}
+
+
+section h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.header-right {
+    width: 400px;
+    height: auto;
+}
+
+.header-right {
+    width: 300px;
+    height: auto;
+}
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.container {
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.btn {
+    background-color: burlywood;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 12px 15px;
+    box-shadow: 2px 2px; 
+    position: relative;
+    transition:  all 0.1s ease;
+}
+
+.btn:active {
+    box-shadow: 0 0 0 rgb(107, 55, 55);
+    transform: translate(2px, 2px);
+}
+
+body {
+    margin: 100 0 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    box-shadow:2 3px rgba(0, 0, 0, 1) ;
+}
+
+
+
+nav{
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.09);
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 17px;
+}
+
+.header-left {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.header-right {
+display: flex;
+align-items: center;
+}
+
+/* Features (atsiliepimai) */
+
+.feature {
+    width: 33.33%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 1.66%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.feature h2 {
+    font-size: 20px;
+    }
+
+.feature p {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+/*JOIN*/
+.bg-color {
+background-color:rgb(194, 192, 173)
+}
+
+/* Naujienlaiskis */
+form {
+margin-bottom: 40px;;
+}
+
+form .flex {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+form input [type="email"]] {
+    background-color: burlywood;
+    color: black;
+    border-radius: 5px;
+    border: 0;
+    padding: 12px 15px;
+    box-shadow: 2px 2px; 
+    flex: 1;
+    margin-right: 10px;
+    display: inline-block;
+
+   }
+
+
+footer {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 16px;
+}
+
+
+
+
+
+
+@media 
+(max-width:480px) {
+    .header-left, .header-right {
+        width:100%;
+    }
+    .header-right{
+        order: 0;
+        }
+    .header-left {
+        order:1;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .header-left h1 {
+        display:none;
+    }
+    .feature {
+        width: 100%;
+        margin:10px;
+    }
+
+    .flex input, .flex {
+        margin:5px 10px;
+        width: 100%;
+    }
+}
+
+
